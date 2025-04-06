@@ -25,7 +25,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-session-token: "FwoGZXIvYXdzEOD//////////wEaDOI46zqLAK4Gf5jlyCK6AW2sdCKcIPhuHkAB3bOMHID3UnWJ8X2qas7vCbCbyi8xGgXTkF4H7inyyCoWjtw+V9xspF6M5IEXpQd5DhGgVEfJjH9c1TzXrjmpfnroRwZdXCMWL5a02OQjdDWUjaeSt/eAlXq4kfJJzzy1oX8E6W8rD4hAkkTxst/KROfWGIdWaNwbgMqnO7TETkedLhRwO0o8omkY0FcsKcTCywgHG3Mn0ubDyTA7soVyunT3sah0u0pYdwjO8JP04SjFlMq/BjIt3QQ6FG5zx3YtZd5RvHHNurpaLQgvLfTZXEbdhGD/tTltA1QrWMKR02sop7F1"
+          aws-session-token: "${{ secrets.AWS_ACCESS_TOKEN }}"
           aws-region: us-east-1
 
       - name: Terraform Init
